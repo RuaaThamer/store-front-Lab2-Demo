@@ -71,11 +71,7 @@ export default {
   methods: {
     async fetchProducts() {
       try {
-<<<<<<< HEAD
         const response = await fetch(`${process.env.VUE_APP_PRODUCT_SERVICE_URL}/products`);        
-=======
-        const response = await fetch(`${process.env.VUE_APP_PRODUCT_SERVICE_URL}/products`);
->>>>>>> 7374f40f727b7d7165d51582effd92fffdbe3a63
         if (response.ok) {
           this.products = await response.json();
         } else {
@@ -94,10 +90,6 @@ export default {
 
       try {
         const response = await fetch(`${process.env.VUE_APP_ORDER_SERVICE_URL}/orders`, {
-<<<<<<< HEAD
-
-=======
->>>>>>> 7374f40f727b7d7165d51582effd92fffdbe3a63
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -105,7 +97,7 @@ export default {
           body: JSON.stringify({
             product: this.selectedProduct,
             quantity: this.quantity,
-            totalPrice: this.totalPrice,  // Send the total price as well
+            totalPrice: this.totalPrice, 
           }),
         });
 
