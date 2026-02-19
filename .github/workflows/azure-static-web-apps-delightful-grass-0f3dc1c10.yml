@@ -15,8 +15,8 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and Deploy Job
     env: # Declare environment variables here
-      VUE_APP_ORDER_SERVICE_URL: https://<order-service-app>.azurewebsites.net/
-      VUE_APP_PRODUCT_SERVICE_URL: https://<product-service-app>.azurewebsites.net/
+      VUE_APP_ORDER_SERVICE_URL: "https://order-service-lab3-f8cddghzfabsfrbk.canadacentral-01.azurewebsites.net"
+      VUE_APP_PRODUCT_SERVICE_URL: "https://product-service-lab3-f9gnancec6bzf9hw.canadacentral-01.azurewebsites.net"
     steps:
       - uses: actions/checkout@v3
         with:
